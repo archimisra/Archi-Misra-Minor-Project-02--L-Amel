@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Amel — Haute Cuisine Delivered</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-serif { font-family: 'Cormorant Garamond', serif; }
+        .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0c0b09] text-[#e4e4e7] font-sans antialiased selection:bg-[#c5a880] selection:text-black">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0c0b09]/90 border-b border-[#27272a]/40">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <a href="#" class="flex flex-col tracking-widest group">
+                <span class="text-xl font-serif font-bold text-[#c5a880] tracking-[0.2em] group-hover:text-white transition-colors">L'Amel</span>
+                <span class="text-[9px] uppercase tracking-[0.4em] text-gray-500 font-sans -mt-1">Haute Cuisine</span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-10 text-xs font-medium uppercase tracking-[0.2em] text-gray-400">
+                <a href="#menu" class="hover:text-[#c5a880] transition-colors">The Menu</a>
+                <a href="#experience" class="hover:text-[#c5a880] transition-colors">Our Standard</a>
+                <a href="#delivery" class="hover:text-[#c5a880] transition-colors">Curated Delivery</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#menu" class="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-[#0c0b09] bg-[#c5a880] hover:bg-[#d6bda4] rounded-sm transition-all shadow-lg shadow-[#c5a880]/10">
+                    Order Gastronomy
+                </a>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden p-2 text-gray-400 hover:text-white" aria-label="Toggle Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8h16M4 16h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-drawer" class="hidden md:hidden bg-[#0c0b09] border-b border-[#27272a] px-6 py-6 space-y-4">
+            <a href="#menu" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-[#c5a880]">The Menu</a>
+            <a href="#experience" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-[#c5a880]">Our Standard</a>
+            <a href="#delivery" class="block text-sm uppercase tracking-widest text-gray-300 hover:text-[#c5a880]">Curated Delivery</a>
+            <a href="#menu" class="block text-center px-4 py-3 text-xs font-semibold uppercase tracking-widest text-[#0c0b09] bg-[#c5a880] rounded-sm">Order Now</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative min-h-[85vh] flex items-center justify-center py-16">
+            <div class="absolute inset-0 bg-radial-[at_center_top] from-[#1f1a14] via-[#0c0b09] to-[#0c0b09] pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto px-6 text-center relative z-10 space-y-8">
+                <div class="inline-flex items-center space-x-3 px-4 py-1.5 rounded-full bg-[#c5a880]/5 border border-[#c5a880]/20">
+                    <span class="text-[10px] font-medium tracking-[0.3em] uppercase text-[#c5a880]">Michelin Star Quality • At Your Residence</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif text-white leading-tight font-normal">
+                    Fine dining, redefined for <br class="hidden sm:block">
+                    <span class="italic text-[#c5a880]">private luxury delivery.</span>
+                </h1>
+                
+                <p class="text-sm sm:text-base text-gray-400 max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
+                    We do not just courier meals; we transport culinary arts. Each signature box arrives white-glove dispatched, custom thermal-shielded, and precisely prepared for your table arrangement.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="#menu" class="w-full sm:w-auto px-8 py-4 bg-[#c5a880] hover:bg-[#d6bda4] text-[#0c0b09] text-xs font-bold uppercase tracking-widest transition-all rounded-sm shadow-xl shadow-[#c5a880]/5">
+                        View Delivery Menu
+                    </a>
+                    <a href="#experience" class="w-full sm:w-auto px-8 py-4 border border-gray-800 hover:border-gray-700 bg-transparent text-gray-300 text-xs font-bold uppercase tracking-widest transition-all rounded-sm">
+                        The Experience
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="py-24 border-t border-[#27272a]/30 bg-[#11100d]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-20 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-[0.3em] text-[#c5a880]">Seasonal Offerings</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-normal text-white">The Curated Delivery Menu</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-[#0c0b09] border border-gray-900 rounded-sm overflow-hidden flex flex-col justify-between hover:border-[#c5a880]/30 transition-all duration-300 group">
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-baseline gap-4">
+                                <h3 class="text-lg font-serif font-semibold text-white tracking-wide group-hover:text-[#c5a880] transition-colors">Pan-Seared Dum Aloo</h3>
+                                <span class="text-sm font-serif text-[#c5a880]">₹780</span>
+                            </div>
+                            <p class="text-xs text-gray-400 font-light leading-relaxed">
+                                Saffron-infused crushed potatoes, roasted fennel arrays, paired perfectly with rich potato broth and chappatis.
+                            </p>
+                        </div>
+                        <div class="px-8 pb-8 pt-2">
+                            <button class="w-full py-2.5 bg-transparent hover:bg-white/5 border border-gray-800 hover:border-gray-600 text-gray-300 hover:text-white text-[10px] font-bold uppercase tracking-widest transition-colors rounded-sm">
+                                Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0c0b09] border border-gray-900 rounded-sm overflow-hidden flex flex-col justify-between hover:border-[#c5a880]/30 transition-all duration-300 group">
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-baseline gap-4">
+                                <h3 class="text-lg font-serif font-semibold text-white tracking-wide group-hover:text-[#c5a880] transition-colors">Truffled Chocolate Pastry</h3>
+                                <span class="text-sm font-serif text-[#c5a880]">₹440</span>
+                            </div>
+                            <p class="text-xs text-gray-400 font-light leading-relaxed">
+                                A premium cut of absolute rich cocoa dark truflle pastry served with crisp caramelized shallots, and rich crossoints.
+                            </p>
+                        </div>
+                        <div class="px-8 pb-8 pt-2">
+                            <button class="w-full py-2.5 bg-transparent hover:bg-white/5 border border-gray-800 hover:border-gray-600 text-gray-300 hover:text-white text-[10px] font-bold uppercase tracking-widest transition-colors rounded-sm">
+                                Add to Order
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#0c0b09] border border-gray-900 rounded-sm overflow-hidden flex flex-col justify-between hover:border-[#c5a880]/30 transition-all duration-300 group md:col-span-2 lg:col-span-1">
+                        <div class="p-8 space-y-4">
+                            <div class="flex justify-between items-baseline gap-4">
+                                <h3 class="text-lg font-serif font-semibold text-white tracking-wide group-hover:text-[#c5a880] transition-colors">Grand Cru Chocolate Soufflé</h3>
+                                <span class="text-sm font-serif text-[#c5a880]">₹500</span>
+                            </div>
+                            <p class="text-xs text-gray-400 font-light leading-relaxed">
+                                72% Venezuelan dark cacao soufflé structure accompanied by Madagascar bourbon vanilla pod crème, engineered to travel flawlessly.
+                            </p>
+                        </div>
+                        <div class="px-8 pb-8 pt-2">
+                            <button class="w-full py-2.5 bg-transparent hover:bg-white/5 border border-gray-800 hover:border-gray-600 text-gray-300 hover:text-white text-[10px] font-bold uppercase tracking-widest transition-colors rounded-sm">
+                                Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 max-w-7xl mx-auto px-6">
+            <div class="border border-gray-900 bg-gradient-to-br from-[#12110e] to-[#0c0b09] p-8 sm:p-12 lg:p-16 rounded-sm grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-5">
+                    <span class="text-xs font-bold text-[#c5a880] uppercase tracking-[0.3em]">Preserving the Art</span>
+                    <h3 class="text-2xl sm:text-3xl font-serif text-white font-normal">Thermal Logistics Control</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+                        Our dynamic kitchen infrastructure wraps your items inside signature state-of-the-art climate capsules. This ensures hot items maintain precisely calibrated temperatures, and delicate crudos stay appropriately chilled up to the exact millisecond of handover.
+                    </p>
+                </div>
+                <div id="delivery" class="lg:col-span-5 w-full bg-[#0c0b09]/80 border border-gray-800/80 p-6 space-y-4">
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between text-xs tracking-wider">
+                            <span class="text-gray-400 font-light">Temperature Accuracy Rate</span>
+                            <span class="text-[#c5a880] font-medium">99.4%</span>
+                        </div>
+                        <div class="h-1 bg-gray-900 rounded-none overflow-hidden">
+                            <div class="h-full bg-[#c5a880] w-[99.4%]"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-1.5">
+                        <div class="flex justify-between text-xs tracking-wider">
+                            <span class="text-gray-400 font-light">White-Glove Dispatched Radii</span>
+                            <span class="text-[#c5a880] font-medium">12 Miles Max</span>
+                        </div>
+                        <div class="h-1 bg-gray-900 rounded-none overflow-hidden">
+                            <div class="h-full bg-[#c5a880] w-[75%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#060608] border-t border-gray-900 text-gray-500 font-light">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6 border-b border-gray-900">
+            <div class="text-center md:text-left">
+                <p class="text-xs uppercase tracking-[0.2em] text-white font-serif font-bold">L'Amel DIRECT</p>
+                <p class="text-[10px] text-gray-500 mt-1">Connoisseur Culinary Ecosystems.</p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-[11px] uppercase tracking-widest text-gray-400">
+                <a href="#menu" class="hover:text-[#c5a880] transition-colors">Menu Directory</a>
+                <a href="#experience" class="hover:text-[#c5a880] transition-colors">Connoisseur Guide</a>
+                <a href="#delivery" class="hover:text-[#c5a880] transition-colors">Concierge Desk</a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 py-6 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-gray-600">
+            <p>&copy; 2026 L'Amel Culinary Matrix. All rights reserved.</p>
+            <p class="tracking-wide">Designed & Built by <span class="text-[#c5a880] font-medium">Archi Misra</span></p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const drawer = document.getElementById('mobile-drawer');
+        
+        btn.addEventListener('click', () => {
+            drawer.classList.toggle('hidden');
+        });
+
+        drawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                drawer.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
